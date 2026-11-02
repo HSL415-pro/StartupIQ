@@ -1,0 +1,28 @@
+{
+  "name": "startupiq",
+  "version": "1.0.0",
+  "description": "AI-Powered Startup Idea Analyzer - Production SaaS Application",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "python -m uvicorn backend.main:app --reload --port 8000",
+    "train": "python training/save_models.py",
+    "build": "cd frontend && npm run build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "axios": "^1.7.9",
+    "recharts": "^2.13.3",
+    "framer-motion": "^11.13.1",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "vite": "^6.0.1"
+  }
+}

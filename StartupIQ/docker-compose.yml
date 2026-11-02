@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  startupiq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: startupiq_app
+    ports:
+      - "8000:8000"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+      - DEBUG=False
+    volumes:
+      - startupiq_data:/app/database
+    restart: unless-stopped
+
+volumes:
+  startupiq_data:

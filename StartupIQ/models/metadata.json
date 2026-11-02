@@ -1,0 +1,47 @@
+{
+  "project": "StartupIQ",
+  "tagline": "AI-Powered Startup Idea Analyzer",
+  "trained_at_timestamp": 1793638873.482285,
+  "training_duration_seconds": 1.82,
+  "models": {
+    "category_detection": {
+      "algorithm": "TF-IDF + LogisticRegression",
+      "accuracy": 1.0,
+      "classes": [
+        "AI",
+        "Agriculture",
+        "Cybersecurity",
+        "Developer Tools",
+        "E-Commerce",
+        "EdTech",
+        "FinTech",
+        "FoodTech",
+        "HealthTech",
+        "SaaS"
+      ],
+      "vectorizer_file": "category_vectorizer.joblib",
+      "model_file": "category_model.joblib"
+    },
+    "market_potential": {
+      "algorithm": "TF-IDF + Ridge Regressor",
+      "rmse": 14.52197077586795,
+      "r2_score": 0.03927465128768537,
+      "vectorizer_file": "market_vectorizer.joblib",
+      "model_file": "market_model.joblib"
+    },
+    "success_predictor": {
+      "algorithm": "Multi-Factor Interaction Ridge Regressor",
+      "rmse": 5.970622722306093,
+      "r2_score": 0.7839318589348818,
+      "model_file": "success_model.joblib"
+    },
+    "similarity_finder": {
+      "algorithm": "TF-IDF Vector Space + Cosine Similarity",
+      "records_indexed": 1200,
+      "vocab_size": 6721,
+      "vectorizer_file": "similarity_vectorizer.joblib",
+      "matrix_file": "similarity_matrix.joblib",
+      "corpus_file": "startups_corpus.joblib"
+    }
+  }
+}

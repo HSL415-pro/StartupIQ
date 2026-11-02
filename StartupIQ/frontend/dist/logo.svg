@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+  <!-- Outer Hexagon / Shield -->
+  <rect x="10" y="10" width="80" height="80" rx="24" fill="url(#brandGrad)" />
+  <!-- Glass Core Layer -->
+  <rect x="14" y="14" width="72" height="72" rx="20" fill="#0b1120" fill-opacity="0.88" stroke="#ffffff" stroke-opacity="0.15" stroke-width="1.5" />
+  <!-- Rocket / Metric IQ Symbol -->
+  <path d="M50 25 L65 48 C62 60 55 68 50 75 C45 68 38 60 35 48 Z" fill="url(#coreGrad)" />
+  <!-- Spark Core -->
+  <circle cx="50" cy="46" r="6" fill="#ffffff" />
+  <circle cx="50" cy="62" r="3" fill="#38bdf8" />
+  <!-- Neural Data Orbit Accents -->
+  <circle cx="28" cy="35" r="2.5" fill="#818cf8" opacity="0.8" />
+  <circle cx="72" cy="35" r="2.5" fill="#ec4899" opacity="0.8" />
+  <circle cx="70" cy="65" r="2.5" fill="#38bdf8" opacity="0.8" />
+</svg>
