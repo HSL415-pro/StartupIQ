@@ -4,12 +4,17 @@ services:
     env: python
     region: oregon
     plan: free
-    buildCommand: "pip install -r requirements.txt && python training/save_models.py && python database/init_db.py"
-    startCommand: "uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
+
+    buildCommand: "cd StartupIQ && pip install -r requirements.txt && python training/save_models.py && python database/init_db.py"
+
+    startCommand: "cd StartupIQ && uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
+
     envVars:
       - key: PYTHON_VERSION
         value: 3.13.1
+
       - key: HOST
         value: 0.0.0.0
+
       - key: DEBUG
-        value: "false"
+        value: 'false'
